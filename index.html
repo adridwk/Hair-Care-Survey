@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Hair Care</title>
+  </head>
+
+
+  <body>
+    <main class="survey">
+
+    <div class="container">
+
+    <h1 id="title">Hair Care Survey</h1>
+    <p id="description">
+      Thank you for taking part in our survey. 
+    </p>
+    <form action="submit" id="survey-form">
+      
+    
+        <label for="name" id="name-label"
+          ><input type="name" id="name" placeholder="Your name" required />
+          Prefered name</label
+        >
+
+        <label for="email" id="email-label">
+          <input type="email" id="email" placeholder="Email" required />
+          Email</label
+        >
+
+        <label for="number" id="number-label">
+          <input
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="16"
+            step="1"
+            max="100"
+          />
+          Age (optional)</label
+        >
+
+        <label for="dropdown" id="dropdown"
+          >Are you...
+        </label>
+        <select name="dropdown" id="dropdown" required>
+          <option value="">Please select an option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Non – binary / other gender identity</option>
+          <option value="no-answer">Prefer not to say</option>
+        </select>
+       
+        <p>For the next few questions, we want to know about your hair care preferences!</p>
+
+        <div class="single-select">
+          <p>Have you ever used any hair care products besides shampoo?</p>
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="yes"
+              checked
+            />Yes</label
+          >
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="no"
+            />No</label
+          >
+        </div>
+
+        <div class="multi-select">
+          <p>What kind of hair care products do/did you use?<span>Please select all products you have ever used.</span></p>
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="vitalizer"
+            checked
+          />Hair-growth vitalizer</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="conditioner"
+          />Conditioner</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="oil"
+          />Hair oil</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="straightener"
+          />Hair straightener</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="activator"
+          />Curl activator</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="gel"
+          />Hair gel</label
+        >
+        </div>
+        <div class="multi-select">
+          <p>How do/did you choose your products?<span>Please select all that apply.</span></p>
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="brand"
+            checked
+          />Brand</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="conditioner"
+          />Conditioner</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="recommendation"
+          />Friend &#47 relative recommendation</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="advice"
+          />Doctor's advice</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="advertising"
+          />Advertising</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="price"
+          />Price</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="ingredients"
+          />Product's ingredients</label
+        >
+          <label
+          ><input
+            name="base-mix"
+            type="checkbox"
+            class="multi-select__input"
+            value="pos-recommend"
+          />Salesperson's recommendation</label
+        >
+        </div>
+      
+        <div class="single-select">
+          <p>How willing are you to try out a new product in the market?</p>
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="not-at-all"
+              checked
+            />Not willing at all</label
+          >
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="not"
+            />Not willing</label
+          >
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="depends"
+            />Depends</label
+          >
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="willing"
+            />Somewhat willing</label
+          >
+          <label
+            ><input
+              name="choices"
+              type="radio"
+              class="single-select__input"
+              value="very-willing"
+            />Very willing</label
+          >
+        </div>
+      
+      <div class="multi-select">
+        <p>What prompts you to use a new product?<span>Please select all that apply.</span></p>
+        <label
+        ><input
+          name="base-mix"
+          type="checkbox"
+          class="multi-select__input"
+          value="price"
+          checked
+        />Price</label
+      >
+        <label
+        ><input
+          name="base-mix"
+          type="checkbox"
+          class="multi-select__input"
+          value="promotions"
+        />Promotional offers</label
+      >
+        <label
+        ><input
+          name="base-mix"
+          type="checkbox"
+          class="multi-select__input"
+          value="brand"
+        />Brand</label
+      >
+        <label
+        ><input
+          name="base-mix"
+          type="checkbox"
+          class="multi-select__input"
+          value="advert"
+        />Seeing an advert</label
+      >
+        <label
+        ><input
+          name="base-mix"
+          type="checkbox"
+          class="multi-select__input"
+          value="review"
+        />Review &#47 recommendation</label
+      >
+
+      <div>
+        <p>Are there any other considerations for you when deciding to change a hair product or hair routine...</p>
+      <textarea class='open-end' name="open-end" id="open-end" placeholder='Tell us about it...'></textarea>
+      </div>
+
+      <div>
+        <button type="submit" id="submit" class='btn'>Add your flavour</button>
+      </div>
+      <label>
+
+      </div>
+    </form>
+  </div>
+  </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
